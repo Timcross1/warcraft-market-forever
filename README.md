@@ -4,6 +4,12 @@ Auction browsing, saved price history and trading research for **WoW Forever EU*
 
 **[Download addon](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever-Beta.zip)** | **[Update prices](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever-Prices.zip)** | [Report a problem](https://github.com/Timcross1/warcraft-market-forever/issues/new/choose)
 
+## Current release
+
+**[2.153.0 beta](https://github.com/Timcross1/warcraft-market-forever/releases/tag/v2.153.0-beta.1)** adds a cleaner character shopping layout, small illustrated upgrade arrows, more responsive resizing, improved disenchant scan recovery and clearer buying/posting controls.
+
+[What's changed and release history](CHANGELOG.md) | [All releases](https://github.com/Timcross1/warcraft-market-forever/releases)
+
 ## Install
 
 1. Download **WarcraftMarketForever-Beta.zip** from Releases. The automatic Source code ZIP contains documentation, not the addon.
