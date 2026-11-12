@@ -1,0 +1,30 @@
+name: Beta feedback
+description: Report bugs, slow pages, price mismatches or confusing controls
+body:
+  - type: input
+    id: environment
+    attributes:
+      label: Addon version, market and class/spec/level
+    validations:
+      required: true
+  - type: input
+    id: display
+    attributes:
+      label: Screen resolution and UI scale
+  - type: textarea
+    id: steps
+    attributes:
+      label: Affected tab and exact steps
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected versus actual result
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Timings, errors, item/variant ID, price, quantity and timestamp
+      description: Remove private chat and personal information from screenshots.
