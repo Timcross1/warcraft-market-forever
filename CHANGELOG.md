@@ -1,7 +1,7 @@
 # Release history
 
 This records public downloads and the main changes between them. Development build numbers are grouped below; they were not all separate GitHub releases.
-## 2.472.0 beta — 14 November 2026
+## 2.472.0 — 14 November 2026
 
 [Download and full release notes](https://github.com/Timcross1/warcraft-market-forever/releases/tag/v2.472.0-beta.1).
 
@@ -17,7 +17,7 @@ Validation: 13 targeted suites on both Lua 5.1 and 5.4 in the latest local revie
 The verified 12 November price pack is retained unchanged (18,699 records); code publication does not refresh observations. Personal settings and AI credentials are not distributed. See README for laptop installation and test priorities.
 
 
-## 2.153.0 beta — 12 November 2026
+## 2.153.0 — 12 November 2026
 
 Published as `v2.153.0-beta.1`. Includes the changes since the previous public release, plus the latest character layout.
 
@@ -56,7 +56,7 @@ Published as `v2.153.0-beta.1`. Includes the changes since the previous public r
 - 2.149–2.151: heading gaps, equal charts and duplicate scan removal.
 - 2.144–2.148: disenchant recovery, one scanner, narrower conversion columns and material groups.
 - 2.132–2.143: scanning coverage and progress, purchase receipts, posting/character workspaces, clearer market summaries and optional niche AI.
-- Earlier internal builds since the first public beta also improved filtering, buying safeguards, saved price evidence and page performance.
+- Earlier internal builds since the first public release also improved filtering, buying safeguards, saved price evidence and page performance.
 
 ### Validation
 139 Lua suites passed under Lua 5.1 and Lua 5.4: 278 successful executions. Distribution checks verify TOC dependencies, asset integrity, clean optional feeds, checksums and matching bundled/data-only history. Native visual and performance acceptance remains incomplete.
