@@ -1,6 +1,21 @@
 # Release history
 
 This records public downloads and the main changes between them. Development build numbers are grouped below; they were not all separate GitHub releases.
+## 2.472.0 beta — 14 November 2026
+
+[Download and full release notes](https://github.com/Timcross1/warcraft-market-forever/releases/tag/v2.472.0-beta.1).
+
+- Character Shop rename, corrected low-level recommendations and control audit.
+- Green price tiers, seven-day price comparisons, 1/3/7/28-day history controls and one Buyout action.
+- Persistent applied price-gap rules and greyed disabled fields.
+- Stable vendor scan ordering and less repeated sorting; Smelting rescans on opening.
+- Improved header/scan layout, compact restocking and purchase feedback.
+- Original melody with orchestral strings.
+
+Validation: 13 targeted suites on both Lua 5.1 and 5.4 in the latest local review; 13 packaging/updater tests; packaged Lua syntax, TOC, ZIP and music checks passed. Public downloads were fetched and verified byte-for-byte. Native laptop testing remains outstanding. Disenchant Beep/Continuous still share Sniper handlers.
+
+The verified 12 November price pack is retained unchanged (18,699 records); code publication does not refresh observations. Personal settings and AI credentials are not distributed. See README for laptop installation and test priorities.
+
 
 ## 2.153.0 beta — 12 November 2026
 
