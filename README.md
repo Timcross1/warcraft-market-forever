@@ -2,9 +2,11 @@
 
 Auction browsing and trading research for WoW Forever EU: Alliance, Horde and Blackwater.
 
-**[Download addon 2.472.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever.zip)** | [Release notes](https://github.com/Timcross1/warcraft-market-forever/releases/tag/v2.472.0-beta.1) | [Report a problem](https://github.com/Timcross1/warcraft-market-forever/issues/new/choose)
+**[Download addon 2.473.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever.zip)** | [Release notes](https://github.com/Timcross1/warcraft-market-forever/releases/tag/v2.473.0) | [Report a problem](https://github.com/Timcross1/warcraft-market-forever/issues/new/choose)
 
 ## Latest update — 14 November 2026
+
+**Laptop resize fix:** releasing the resize handle now keeps your chosen size. Width and height are saved for reopening/reload. New installs default to nearly the full screen width, while fitting the available height. Tooltips use available side space or overlay inside the edge without shrinking the window.
 
 - Character Shop replaces Character Outfitter, with corrected low-level gear recommendations and audited controls.
 - Green price tiers, seven-day price comparisons, 1/3/7/28-day charts and one Buyout action.
@@ -22,7 +24,7 @@ WarcraftMarketForever.zip includes the addon, bundled price history, music and W
 1. Download **WarcraftMarketForever.zip**. GitHub Source code archives contain documentation, not the addon.
 2. Close WoW. Extract WarcraftMarketForever into `World of Warcraft/_forever_/Interface/AddOns/`.
 3. Check WarcraftMarketForever.toc is directly inside that folder, without a second nested folder.
-4. Start WoW, enable the addon and type `/wmf`. Check version **2.472.0** and choose your market.
+4. Start WoW, enable the addon and type `/wmf`. Check version **2.473.0** and choose your market.
 5. Open an auctioneer for live offers and trading. Cached history can be viewed away from the auction house.
 
 Back up any existing addon. Keep WTF and SavedVariables. Personal preferences, watchlists and trade records are not bundled: transfer your own SavedVariables separately with WoW closed on both machines if you want matching settings. Back up the destination first.
