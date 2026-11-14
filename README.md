@@ -13,6 +13,10 @@ Auction browsing and trading research for WoW Forever EU: Alliance, Horde and Bl
 - Improved scan controls, header alignment, compact restocking and purchase feedback.
 - Original melody retained with orchestral strings.
 
+## One complete download
+
+WarcraftMarketForever.zip includes the addon, bundled price history, music and Windows price-update tools. Extract the ZIP and read **START-HERE.txt**. No separate price pack download is needed for setup.
+
 ## Install on another laptop
 
 1. Download **WarcraftMarketForever.zip**. GitHub Source code archives contain documentation, not the addon.
@@ -24,6 +28,10 @@ Auction browsing and trading research for WoW Forever EU: Alliance, Horde and Bl
 Back up any existing addon. Keep WTF and SavedVariables. Personal preferences, watchlists and trade records are not bundled: transfer your own SavedVariables separately with WoW closed on both machines if you want matching settings. Back up the destination first.
 
 ## Prices
+
+For automatic downloads, run **PriceUpdates/EnableHourlyDBSync.cmd** from the extracted complete package after installing the addon, then choose your WoW Forever folder. This registers a Windows task for your account: immediately, at sign-in and hourly. Keep PriceUpdates outside AddOns. In WoW, use Options > Blizzard DB sync > Sync to load downloaded prices (UI reload). The manual updater is also included in PriceUpdates.
+
+The separate data-only pack below is optional for existing installations:
 
 [Download the data-only update](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever-Prices.zip), extract outside AddOns and run UpdatePriceHistory.cmd. Select the WoW Forever folder, then `/reload`. The updater checks hashes, refuses older observations and backs up replaced data.
 
