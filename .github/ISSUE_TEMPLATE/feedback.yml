@@ -1,4 +1,4 @@
-name: Beta feedback
+name: Feedback
 description: Report bugs, slow pages, price mismatches or confusing controls
 body:
   - type: input
