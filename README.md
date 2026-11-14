@@ -1,51 +1,53 @@
 # Warcraft Market Forever — beta
 
-Auction browsing, saved price history and trading research for **WoW Forever EU**: Alliance, Horde and Blackwater.
+Auction browsing and trading research for WoW Forever EU: Alliance, Horde and Blackwater.
 
-**[Download addon](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever-Beta.zip)** | **[Update prices](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever-Prices.zip)** | [Report a problem](https://github.com/Timcross1/warcraft-market-forever/issues/new/choose)
+**[Download addon 2.472.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever-Beta.zip)** | [Release notes](https://github.com/Timcross1/warcraft-market-forever/releases/tag/v2.472.0-beta.1) | [Report a problem](https://github.com/Timcross1/warcraft-market-forever/issues/new/choose)
 
-## Current release
+## Latest update — 14 November 2026
 
-**[2.153.0 beta](https://github.com/Timcross1/warcraft-market-forever/releases/tag/v2.153.0-beta.1)** adds a cleaner character shopping layout, small illustrated upgrade arrows, more responsive resizing, improved disenchant scan recovery and clearer buying/posting controls.
+- Character Shop replaces Character Outfitter, with corrected low-level gear recommendations and audited controls.
+- Green price tiers, seven-day price comparisons, 1/3/7/28-day charts and one Buyout action.
+- Applied price-gap rules persist; disabled fields are greyed out.
+- Vendor scans retain result order and avoid repeated full sorting; Smelting rescans on opening.
+- Improved scan controls, header alignment, compact restocking and purchase feedback.
+- Original melody retained with orchestral strings.
 
-[What's changed and release history](CHANGELOG.md) | [All releases](https://github.com/Timcross1/warcraft-market-forever/releases)
+## Install on another laptop
 
-## Install
+1. Download **WarcraftMarketForever-Beta.zip**. GitHub Source code archives contain documentation, not the addon.
+2. Close WoW. Extract WarcraftMarketForever into `World of Warcraft/_forever_/Interface/AddOns/`.
+3. Check WarcraftMarketForever.toc is directly inside that folder, without a second nested folder.
+4. Start WoW, enable the addon and type `/wmf`. Check version **2.472.0** and choose your market.
+5. Open an auctioneer for live offers and trading. Cached history can be viewed away from the auction house.
 
-1. Download **WarcraftMarketForever-Beta.zip** from Releases. The automatic Source code ZIP contains documentation, not the addon.
-2. Exit WoW. Extract the WarcraftMarketForever folder into `World of Warcraft/_forever_/Interface/AddOns/`.
-3. Check that WarcraftMarketForever.toc is immediately inside that folder, without a second nested addon folder.
-4. Start WoW, enable the addon and type `/wmf`. Choose your market.
-5. Open an auctioneer for live offers and trading. Away from the AH you can view cached prices and trends.
+Back up any existing addon. Keep WTF and SavedVariables. Personal preferences, watchlists and trade records are not bundled: transfer your own SavedVariables separately with WoW closed on both machines if you want matching settings. Back up the destination first.
 
-Back up an existing addon before replacing it. Keep WTF and SavedVariables. A code update includes bundled history; reinstall the latest price pack afterwards if your local history was newer.
+## Prices
 
-## Update prices
+[Download the data-only update](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever-Prices.zip), extract outside AddOns and run UpdatePriceHistory.cmd. Select the WoW Forever folder, then `/reload`. The updater checks hashes, refuses older observations and backs up replaced data.
 
-Download **WarcraftMarketForever-Prices.zip**, extract outside AddOns, run UpdatePriceHistory.cmd and choose your WoW Forever folder. Then type `/reload`. Options > Update price history provides the same instructions. The updater checks hashes, refuses older observations and backs up replaced data.
+This release retains the verified 12 November snapshot: 18,699 records across three markets. Code publication does not refresh observation times. Optional SyncPriceHistory and EnableHourlyDBSync helpers download published packs; they do not run a collector or make upstream data fresh. Live AH scans provide current offers. Reapply a newer price pack after replacing addon files if needed.
 
-Updates are manually published during beta. There is no automatic 30-minute publishing service. Observation time, download time and Blizzard publication time are different. Cached prices are not executable live offers.
+## Laptop test checklist
 
-## First test
+- On the level-14 priest, open Character Shop > Weapons, compare Show: Recommended with Show: Usable, and check search, category/rarity filters, sorting and selection.
+- Apply custom Price gap rules; close/reopen, then reload and confirm they remain. Check green tiers, chart periods and column readability.
+- Run Vendor profit and watch whether discovered deals stay visible. Reopen Smelting and check it scans.
+- Try smaller window sizes and your normal UI scale; report clipped text and cold versus repeat load times.
+- Listen to the original melody with strings; check phrasing and loop transitions.
+- Compare item, unit price, quantity and total with the native AH. If trading, check the receipt and ledger using a small amount of your own gold. Every transaction requires your click.
 
-- Open away from an auctioneer; inspect cached history and its age.
-- Browse without a name, filter Rare, change categories, search Linen Cloth, change pages and select items. Check graph title, item name, unit price and quantity.
-- Compare one price against Blizzard's AH and record the time; offers may change between requests.
-- Start/stop scans and switch tabs during a scan. Report freezes and cold versus repeated load times.
-- Hover several rows and scroll quickly. Default hover uses a lightweight card; hold Shift before hovering for full Blizzard details and other addons' tooltip additions.
-- Test your usual screen resolution and UI scale for clipping.
-- Add/remove a watch alert, check gear against equipped items and capture a bank snapshot. Each character needs its own capture; missing data means unknown.
-- If you choose to trade, use a tiny amount of your own gold. Check item, quantity, unit/total price, receipt, posting state and ledger. Each transaction requires your click. A listing is not a completed profitable sale.
-- Reinstall the price pack and verify preferences/watch alerts survive.
+## Validation and known limits
 
-## Known limits
+The latest local review passed 13 targeted suites on both Lua 5.1 and 5.4. This publication passed 13 packaging/updater tests, ZIP/TOC checks, compilation of every packaged Lua file on both runtimes, and the latest music hash check. These are offline checks; native visuals, audio and live auction behaviour still need laptop testing.
 
-**AI is optional and unconfigured in this beta.** No API key or hosted AI endpoint is supplied. Ask AI needs a separately configured local helper. The owner's 30p/day allowance is not a shared multi-user budget.
+Disenchant Beep/Continuous still share Sniper handlers; independent settings need further work. AI is optional and unconfigured; no shared service or API key is supplied. No personal-use BiS or regional sales dataset is distributed. Missing long history remains unavailable. Scores are not simulated damage gains; estimated profits are not guaranteed sales. Blackwater fees remain unverified against native receipts.
 
-No third-party personal-use BiS dataset or regional sales dataset is included. Missing guides, sales estimates or long history stay unavailable. Gear scores are not simulated percentage DPS gains. Suffix variants may lack comparable evidence. Low supply does not prove demand. Disenchant yields are estimates. Conservative profit is not a sale probability; Blackwater commission remains unverified against native receipts.
-
-Character data and trading records remain in local SavedVariables. No automatic purchases or telemetry are configured. Collector databases, backend credentials and personal data are not distributed. Font licences and media attribution remain in the addon ZIP.
+No collector database, credentials, personal inventory, watchlist or trade receipts are included. Personal records remain in local SavedVariables. No automatic purchases or telemetry are configured. Media attribution and font licences are retained in the ZIP.
 
 ## Feedback
 
-Use Issues. Include version, market, class/spec/level, screen resolution/UI scale, affected tab, steps, expected versus actual results and any error. For slowness include cold/repeat timing and performance panel values. For prices include item ID/variant, unit versus stack price, quantity and timestamp. Crop private chat/names from screenshots.
+Use Issues with version, market, class/level, screen resolution/UI scale, affected tab, exact steps and expected versus actual result. Include timestamps and item/variant IDs for price issues. Remove private chat from screenshots.
+
+[Earlier release history](CHANGELOG.md) | [All releases](https://github.com/Timcross1/warcraft-market-forever/releases)
