@@ -1,8 +1,8 @@
-# Warcraft Market Forever — beta
+# Warcraft Market Forever
 
 Auction browsing and trading research for WoW Forever EU: Alliance, Horde and Blackwater.
 
-**[Download addon 2.472.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever-Beta.zip)** | [Release notes](https://github.com/Timcross1/warcraft-market-forever/releases/tag/v2.472.0-beta.1) | [Report a problem](https://github.com/Timcross1/warcraft-market-forever/issues/new/choose)
+**[Download addon 2.472.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever.zip)** | [Release notes](https://github.com/Timcross1/warcraft-market-forever/releases/tag/v2.472.0-beta.1) | [Report a problem](https://github.com/Timcross1/warcraft-market-forever/issues/new/choose)
 
 ## Latest update — 14 November 2026
 
@@ -15,7 +15,7 @@ Auction browsing and trading research for WoW Forever EU: Alliance, Horde and Bl
 
 ## Install on another laptop
 
-1. Download **WarcraftMarketForever-Beta.zip**. GitHub Source code archives contain documentation, not the addon.
+1. Download **WarcraftMarketForever.zip**. GitHub Source code archives contain documentation, not the addon.
 2. Close WoW. Extract WarcraftMarketForever into `World of Warcraft/_forever_/Interface/AddOns/`.
 3. Check WarcraftMarketForever.toc is directly inside that folder, without a second nested folder.
 4. Start WoW, enable the addon and type `/wmf`. Check version **2.472.0** and choose your market.
