@@ -1,3 +1,7 @@
+## 2.561.0 - Installer 1.13.0
+
+Matching versioned addon ZIP and installer bundle. Signed automatic channel: 2.561.0. See the release notes for download/update instructions.
+
 # Release history
 
 This records public downloads and the main changes between them. Development build numbers are grouped below; they were not all separate GitHub releases.
