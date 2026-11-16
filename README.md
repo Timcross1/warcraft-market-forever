@@ -3,19 +3,23 @@
 Auction browsing, price history and trading tools for WoW Forever EU: Alliance, Horde and Blackwater.
 
 <!-- WMF_CURRENT_RELEASE -->
-## Current downloads: addon 2.585.0, installer 1.15.0
+## Current downloads: addon 2.588.0, installer 1.16.0
 
-- [Windows installer 1.15.0 — bundled addon 2.585.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
-- [Manual addon 2.585.0 ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.585.0/WarcraftMarketForever-2.585.0.zip)
+- [Windows installer 1.16.0 — bundled addon 2.588.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
+- [Manual addon 2.588.0 ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.588.0/WarcraftMarketForever-2.588.0.zip)
 - [Current price pack](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever-Prices.zip)
 - [Versions and channel status](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/ReleaseInfo.json)
 
 Run the matching installer upgrade, open Warcraft Market, choose the game folder and click Install/Reinstall addon, then `/reload` in WoW. The companion does not update its own Windows EXE through Update addon now. Preserve WTF/SavedVariables and newer generated prices. WoW can stay open.
 
-Signed automatic addon updates deliver **2.585.0**.
+Signed automatic addon updates deliver **2.588.0**.
 
 The Windows MSI/EXE is Authenticode unsigned. If security software blocks it, use the manual ZIP; do not disable protection. Addon signatures are separate from Windows signing.
 <!-- /WMF_CURRENT_RELEASE -->
+
+## New in 2.588.0
+
+Market price now uses outlier-filtered real asking history, retains dated fallback values and grows to a rolling 14-day reference. Graph cards include an Auctions tab showing checked pricing tiers. Browse and Item lookup offer an experimental Price / supply column preset; it is descriptive, not a validated forecast. Saved watch lists and manual targets are preserved.
 
 ## Included
 
