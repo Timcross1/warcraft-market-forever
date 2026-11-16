@@ -3,9 +3,9 @@
 Auction browsing, price history and trading tools for WoW Forever EU: Alliance, Horde and Blackwater.
 
 <!-- WMF_CURRENT_RELEASE -->
-## Current downloads: addon 2.591.0, installer 1.17.0
+## Current downloads: addon 2.591.0, installer 1.18.0
 
-- [Windows installer 1.17.0 — bundled addon 2.591.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
+- [Windows installer 1.18.0 — bundled addon 2.591.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
 - [Manual addon 2.591.0 ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.591.0/WarcraftMarketForever-2.591.0.zip)
 - [Current price pack](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever-Prices.zip)
 - [Versions and channel status](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/ReleaseInfo.json)
@@ -48,3 +48,5 @@ Purchases require a player click and fresh native checks. Recorded asks and esti
 [Report a problem](https://github.com/Timcross1/warcraft-market-forever/issues/new/choose) with addon/installer version, market, page, resolution/UI scale, reproduction steps and expected/actual behavior. Remove private information from screenshots.
 
 [Release history](https://github.com/Timcross1/warcraft-market-forever/releases) | [Latest release notes](https://github.com/Timcross1/warcraft-market-forever/releases/latest)
+
+Installer 1.18.0 fixes the addon download-size limit. Existing companion users should reinstall the latest MSI; addon code and market prices continue to update separately.
