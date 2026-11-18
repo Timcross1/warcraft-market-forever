@@ -3,25 +3,19 @@
 Auction browsing, price history and trading tools for WoW Forever EU: Alliance, Horde and Blackwater.
 
 <!-- WMF_CURRENT_RELEASE -->
-## Current downloads: addon 2.598.0, installer 1.21.0
+## Current downloads: addon 2.636.0, installer 1.23.0
 
-- [Windows installer 1.21.0 — bundled addon 2.598.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
-- [Manual addon 2.598.0 ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.598.0/WarcraftMarketForever-2.598.0.zip)
+- [Windows installer 1.23.0 — bundled addon 2.636.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
+- [Manual addon 2.636.0 ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.636.0/WarcraftMarketForever-2.636.0.zip)
 - [Current price pack](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever-Prices.zip)
 - [Versions and channel status](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/ReleaseInfo.json)
 
 Run the matching installer upgrade, open Warcraft Market, choose the game folder and click Install/Reinstall addon, then `/reload` in WoW. The companion does not update its own Windows EXE through Update addon now. Preserve WTF/SavedVariables and newer generated prices. WoW can stay open.
 
-Signed automatic addon updates deliver **2.598.0**.
+Signed automatic addon updates deliver **2.636.0**.
 
 The Windows MSI/EXE is Authenticode unsigned. If security software blocks it, use the manual ZIP; do not disable protection. Addon signatures are separate from Windows signing.
 <!-- /WMF_CURRENT_RELEASE -->
-
-## New in 2.598.0
-
-Graph periods now include 2w and All retained history. Stock uses signed bars; Buy / Sell uses blue bars with glow. Repeated history/render work is cached in both offline and AH contexts. Includes saved prices/quantities away from the AH and DB source icons.
-
-Installer 1.21.0 retains signed separate code/media updates. Unchanged media is reused and prices update independently. Older companions should upgrade using this MSI. No collector/database retention changes are included.
 
 ## Included
 
