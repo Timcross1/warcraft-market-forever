@@ -1,3 +1,7 @@
+## 2.637.0 - Installer 1.24.0
+
+Matching versioned addon ZIP and installer bundle. Signed automatic channel: 2.637.0. See the release notes for download/update instructions.
+
 ## 2.636.0 - Installer 1.23.0
 
 Matching versioned addon ZIP and installer bundle. Signed automatic channel: 2.636.0. See the release notes for download/update instructions.
