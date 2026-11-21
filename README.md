@@ -3,18 +3,18 @@
 Auction browsing, price history and trading tools for WoW Forever EU: Alliance, Horde and Blackwater.
 
 <!-- WMF_CURRENT_RELEASE -->
-## Current downloads: addon 2.646.0, installer 1.27.0
+## Current downloads: addon 2.647.0, installer 1.28.0
 
-- [Windows installer 1.27.0 — bundled addon 2.646.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
-- [Manual addon bundle — WMF, Farm and Performance](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.646.0/WarcraftMarketForever-Addons-2.646.0.zip)
-- [Standalone Forever Farm ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.646.0/WarcraftMarketForever-Farm-1.5.0.zip)
-- [WMF core addon 2.646.0 ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.646.0/WarcraftMarketForever-2.646.0.zip)
+- [Windows installer 1.28.0 — bundled addon 2.647.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
+- [Manual addon bundle — WMF, Farm and Performance](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.647.0/WarcraftMarketForever-Addons-2.647.0.zip)
+- [Standalone Forever Farm ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.647.0/WarcraftMarketForever-Farm-1.5.1.zip)
+- [WMF core addon 2.647.0 ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.647.0/WarcraftMarketForever-2.647.0.zip)
 - [Current price pack](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever-Prices.zip)
 - [Versions and channel status](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/ReleaseInfo.json)
 
 Run the matching installer upgrade, open Warcraft Market, choose the game folder and click Install/Reinstall addon, then `/reload` in WoW. The companion does not update its own Windows EXE through Update addon now. Preserve WTF/SavedVariables and newer generated prices. WoW can stay open.
 
-Signed automatic addon updates deliver **2.646.0**.
+Signed automatic addon updates deliver **2.647.0**.
 
 The Windows MSI/EXE is Authenticode unsigned. If security software blocks it, use the manual ZIP; do not disable protection. Addon signatures are separate from Windows signing.
 <!-- /WMF_CURRENT_RELEASE -->
@@ -25,7 +25,7 @@ Auction browsing, Character Shop, price and quantity history, saved searches, Sn
 
 ## Included features
 
-### Forever Farm 1.5.0 — `/wmfg`
+### Forever Farm 1.5.1 â€” `/wmfg`
 
 - Live estimated gold/hour, session value, coins, quest gold, loot value, vendor alternative, goal progress and ETA.
 - Compact Warcraft-style summary plus independently draggable/resizable loot panel. Native item icons, rarity colours and game tooltips.
@@ -37,6 +37,7 @@ Auction browsing, Character Shop, price and quantity history, saved searches, Sn
 - All graph samples remain saved; long graphs draw a bounded extrema-preserving projection with every original checkpoint accessible on hover.
 - Native fonts, text size, scale, themes, backgrounds and transparent-to-opaque panels; summary/tiny modes and saved positions.
 - **Mouseover On/Off** on the loot toolbar; reveal when hovered and fade when idle. Explicit show/hide controls and clear paused status.
+- Empty realm names use native normalized-name, CVar or numeric realm identity fallbacks. Unknown-realm samples remain local; no guessed realm or player GUID is uploaded. Missing identity pauses sharing while preserving consent and old records.
 - Account-wide observed drop knowledge across characters on the same account; money, purchases and session accounting stay per character.
 - Optional community drop sharing defaults to **No**. **Yes** queues only new complete observations after consent; same-realm/faction/build/instance cohorts, deduplication and bounded queues. Save consent with normal /reload or logout for the companion to read it. No old observations are uploaded retroactively.
 - Community estimates show sample counts and uncertainty; they are observed player reports, not authoritative game drop chances. Market prices still use the original Blizzard collector.
@@ -53,7 +54,7 @@ Auction browsing, Character Shop, price and quantity history, saved searches, Sn
 - Dedicated **Alerts** settings: custom minimum gold per item, optional native coin jingle, brief golden sparkles and preview. Default threshold is strictly above 1g per item.
 - Bounded reusable rows, two-chunk decode cache, corpse history and particle pool. Detailed event logs and compact session records grow with recorded history; full item ledgers retain the latest 50 sessions. No auction queries, forced reload or forced garbage collection from Farm.
 
-### Warcraft Market Forever 2.646.0 — `/wmf`
+### Warcraft Market Forever 2.647.0 â€” `/wmf`
 
 - WoW Forever EU Alliance, Horde and Blackwater market scopes using dated exports from the existing Blizzard API collector.
 - Browse Auctions with search/category/rarity/level filters, native item tooltips, watch controls, scrolling and up to 50 items per page.
@@ -70,7 +71,7 @@ Auction browsing, Character Shop, price and quantity history, saved searches, Sn
 - Responsive classic/concept layouts, graph visibility controls, standard blue fonts, reusable row/projection caches and background-work pacing.
 - New Horizons opening music and selectable sound/animation settings.
 
-### Forever Performance 1.0.0 — `/wmfp`
+### Forever Performance 1.0.0 â€” `/wmfp`
 
 - Configurable FPS target, fixed-size FPS history and gradual relief tiers for sustained low FPS.
 - Supported scenery settings adjust outside combat and restore gradually. Manual changes and other addons' changes are preserved.
@@ -79,7 +80,7 @@ Auction browsing, Character Shop, price and quantity history, saved searches, Sn
 
 ### Installation and data
 
-- Windows installer 1.27.0 bundles matching WMF 2.646.0, Farm 1.5.0 and Performance 1.0.0.
+- Windows installer 1.28.0 bundles matching WMF 2.647.0, Farm 1.5.1 and Performance 1.0.0.
 - The complete manual addon bundle contains those three addons plus validated scoped-market helpers. A separate Farm-only ZIP is also provided.
 - Mana and Hunter Shot FX are excluded from these bundles. Existing standalone copies and WTF/SavedVariables are preserved.
 - The publisher-signed automatic channel updates the main WMF addon. Farm/Performance updates are delivered by the installer or manual ZIPs.
