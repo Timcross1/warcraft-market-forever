@@ -3,18 +3,19 @@
 Auction browsing, price history and trading tools for WoW Forever EU: Alliance, Horde and Blackwater.
 
 <!-- WMF_CURRENT_RELEASE -->
-## Current downloads: addon 2.647.0, installer 1.28.0
+## Current downloads: addon 2.648.0, installer 1.29.0
 
-- [Windows installer 1.28.0 — bundled addon 2.647.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
-- [Manual addon bundle — WMF, Farm and Performance](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.647.0/WarcraftMarketForever-Addons-2.647.0.zip)
-- [Standalone Forever Farm ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.647.0/WarcraftMarketForever-Farm-1.5.1.zip)
-- [WMF core addon 2.647.0 ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.647.0/WarcraftMarketForever-2.647.0.zip)
+- [Always-current Windows installer EXE](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.exe)
+- [Windows installer 1.29.0 — bundled addon 2.648.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
+- [Manual addon bundle — WMF, Farm and Performance](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.648.0/WarcraftMarketForever-Addons-2.648.0.zip)
+- [Standalone Forever Farm ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.648.0/WarcraftMarketForever-Farm-1.5.1.zip)
+- [WMF core addon 2.648.0 ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.648.0/WarcraftMarketForever-2.648.0.zip)
 - [Current price pack](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever-Prices.zip)
 - [Versions and channel status](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/ReleaseInfo.json)
 
-Run the matching installer upgrade, open Warcraft Market, choose the game folder and click Install/Reinstall addon, then `/reload` in WoW. The companion does not update its own Windows EXE through Update addon now. Preserve WTF/SavedVariables and newer generated prices. WoW can stay open.
+Run WarcraftMarket-Setup.exe to fetch the latest MSI even from an older saved launcher. After the MSI upgrade, open Warcraft Market, choose the game folder and click Install/Reinstall addon, then `/reload` in WoW. The companion checks publisher-signed main, Farm and Performance updates plus current market data. The EXE launcher upgrades the Windows companion itself. Preserve WTF/SavedVariables and newer generated prices. WoW can stay open.
 
-Signed automatic addon updates deliver **2.647.0**.
+Signed automatic addon updates deliver **2.648.0**.
 
 The Windows MSI/EXE is Authenticode unsigned. If security software blocks it, use the manual ZIP; do not disable protection. Addon signatures are separate from Windows signing.
 <!-- /WMF_CURRENT_RELEASE -->
@@ -23,9 +24,16 @@ The Windows MSI/EXE is Authenticode unsigned. If security software blocks it, us
 
 Auction browsing, Character Shop, price and quantity history, saved searches, Sniper, crafting and conversion research, watchlists, posting and auction management. Media attribution and font licences remain in the distribution. GitHub Source code archives contain distribution documentation; install the actual ZIP/MSI above.
 
+## Always-current installer and all-addon updates
+
+- Use WarcraftMarket-Setup.exe as the single download. A saved copy checks GitHub and verifies the latest MSI on every launch; older downloaded MSI files remain fixed offline versions.
+- Installer 1.29.0 delivers WMF 2.648.0, Farm 1.5.1 and Performance 1.0.0. Leave Include Farm and Performance addons checked, then Install/Reinstall addon.
+- Automatic and Update addon now checks include publisher-signed Farm and Performance packages, main addon and fresh market exports; retained community reports and SavedVariables stay protected.
+- Windows MSI/EXE remain Authenticode unsigned; launcher SHA-256 integrity checks are separate from publisher-signed addon code.
+
 ## Included features
 
-### Forever Farm 1.5.1 â€” `/wmfg`
+### Forever Farm 1.5.1 — `/wmfg`
 
 - Live estimated gold/hour, session value, coins, quest gold, loot value, vendor alternative, goal progress and ETA.
 - Compact Warcraft-style summary plus independently draggable/resizable loot panel. Native item icons, rarity colours and game tooltips.
@@ -54,7 +62,7 @@ Auction browsing, Character Shop, price and quantity history, saved searches, Sn
 - Dedicated **Alerts** settings: custom minimum gold per item, optional native coin jingle, brief golden sparkles and preview. Default threshold is strictly above 1g per item.
 - Bounded reusable rows, two-chunk decode cache, corpse history and particle pool. Detailed event logs and compact session records grow with recorded history; full item ledgers retain the latest 50 sessions. No auction queries, forced reload or forced garbage collection from Farm.
 
-### Warcraft Market Forever 2.647.0 â€” `/wmf`
+### Warcraft Market Forever 2.648.0 — `/wmf`
 
 - WoW Forever EU Alliance, Horde and Blackwater market scopes using dated exports from the existing Blizzard API collector.
 - Browse Auctions with search/category/rarity/level filters, native item tooltips, watch controls, scrolling and up to 50 items per page.
@@ -71,7 +79,7 @@ Auction browsing, Character Shop, price and quantity history, saved searches, Sn
 - Responsive classic/concept layouts, graph visibility controls, standard blue fonts, reusable row/projection caches and background-work pacing.
 - New Horizons opening music and selectable sound/animation settings.
 
-### Forever Performance 1.0.0 â€” `/wmfp`
+### Forever Performance 1.0.0 — `/wmfp`
 
 - Configurable FPS target, fixed-size FPS history and gradual relief tiers for sustained low FPS.
 - Supported scenery settings adjust outside combat and restore gradually. Manual changes and other addons' changes are preserved.
@@ -80,10 +88,10 @@ Auction browsing, Character Shop, price and quantity history, saved searches, Sn
 
 ### Installation and data
 
-- Windows installer 1.28.0 bundles matching WMF 2.647.0, Farm 1.5.1 and Performance 1.0.0.
+- Windows installer 1.29.0 bundles matching WMF 2.648.0, Farm 1.5.1 and Performance 1.0.0.
 - The complete manual addon bundle contains those three addons plus validated scoped-market helpers. A separate Farm-only ZIP is also provided.
 - Mana and Hunter Shot FX are excluded from these bundles. Existing standalone copies and WTF/SavedVariables are preserved.
-- The publisher-signed automatic channel updates the main WMF addon. Farm/Performance updates are delivered by the installer or manual ZIPs.
+- Automatic hourly and manual updates check publisher-signed main WMF, Farm and Performance packages plus current market data. Explicit companion opt-out and newer local versions are preserved.
 - Windows MSI/EXE files remain Authenticode unsigned; addon publisher signatures are separate. Never disable security software to install.
 - The hourly legacy helper now uses the same validated, selected-market companion updater as Download prices now, preventing stale separate market files while combined prices advance.
 - Daily AI reports travel with validated scoped market downloads and populate both commentary views with their genuine dates. The morning job reuses reports without additional browsing-triggered AI requests; measured successful usage releases unused budget reservations while retaining the 30p cap and no automatic paid retries.
@@ -92,9 +100,9 @@ Auction browsing, Character Shop, price and quantity history, saved searches, Sn
 
 ## Installation and updates
 
-Download WarcraftMarket-Setup.msi directly for Windows setup. For a manual installation, extract the WarcraftMarketForever folder from the versioned ZIP into Interface/AddOns. WarcraftMarketForever.toc must sit directly inside the addon folder. Preserve WTF/SavedVariables and newer generated price files. Then use /reload and /wmf.
+Use WarcraftMarket-Setup.exe for Windows setup; each launch resolves and verifies the latest MSI. Saved older MSI files remain offline versioned installers. For a manual installation, extract the WarcraftMarketForever folder from the versioned ZIP into Interface/AddOns. WarcraftMarketForever.toc must sit directly inside the addon folder. Preserve WTF/SavedVariables and newer generated price files. Then use /reload and /wmf.
 
-Automatic downloads default on for new companion installations and can be disabled. The companion checks at sign-in and hourly while signed in. Download prices now retries price checks; Update addon now uses only publisher-signed code. Upgrading the Windows companion itself requires the current MSI.
+Automatic downloads default on for new companion installations and can be disabled. The companion checks at sign-in and hourly while signed in. Download prices now retries price checks; Update addon now checks signed main, Farm and Performance code and market data. The EXE launcher fetches the latest MSI when upgrading the Windows companion itself.
 
 Prices update independently; publishing code does not refresh auction observations. Data retains genuine source dates. Stale/invalid packs are rejected and newer installed observations are preserved. No game password or database credentials are required.
 
