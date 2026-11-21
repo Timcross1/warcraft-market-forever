@@ -3,18 +3,18 @@
 Auction browsing, price history and trading tools for WoW Forever EU: Alliance, Horde and Blackwater.
 
 <!-- WMF_CURRENT_RELEASE -->
-## Current downloads: addon 2.641.0, installer 1.26.0
+## Current downloads: addon 2.646.0, installer 1.27.0
 
-- [Windows installer 1.26.0 — bundled addon 2.641.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
-- [Manual addon bundle — WMF, Farm and Performance](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.641.0/WarcraftMarketForever-Addons-2.641.0.zip)
-- [Standalone Forever Farm ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.641.0/WarcraftMarketForever-Farm-1.4.0.zip)
-- [WMF core addon 2.641.0 ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.641.0/WarcraftMarketForever-2.641.0.zip)
+- [Windows installer 1.27.0 — bundled addon 2.646.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
+- [Manual addon bundle — WMF, Farm and Performance](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.646.0/WarcraftMarketForever-Addons-2.646.0.zip)
+- [Standalone Forever Farm ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.646.0/WarcraftMarketForever-Farm-1.5.0.zip)
+- [WMF core addon 2.646.0 ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.646.0/WarcraftMarketForever-2.646.0.zip)
 - [Current price pack](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever-Prices.zip)
 - [Versions and channel status](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/ReleaseInfo.json)
 
 Run the matching installer upgrade, open Warcraft Market, choose the game folder and click Install/Reinstall addon, then `/reload` in WoW. The companion does not update its own Windows EXE through Update addon now. Preserve WTF/SavedVariables and newer generated prices. WoW can stay open.
 
-Signed automatic addon updates deliver **2.641.0**.
+Signed automatic addon updates deliver **2.646.0**.
 
 The Windows MSI/EXE is Authenticode unsigned. If security software blocks it, use the manual ZIP; do not disable protection. Addon signatures are separate from Windows signing.
 <!-- /WMF_CURRENT_RELEASE -->
@@ -25,7 +25,7 @@ Auction browsing, Character Shop, price and quantity history, saved searches, Sn
 
 ## Included features
 
-### Forever Farm 1.4.0 — `/wmfg`
+### Forever Farm 1.5.0 — `/wmfg`
 
 - Live estimated gold/hour, session value, coins, quest gold, loot value, vendor alternative, goal progress and ETA.
 - Compact Warcraft-style summary plus independently draggable/resizable loot panel. Native item icons, rarity colours and game tooltips.
@@ -37,6 +37,11 @@ Auction browsing, Character Shop, price and quantity history, saved searches, Sn
 - All graph samples remain saved; long graphs draw a bounded extrema-preserving projection with every original checkpoint accessible on hover.
 - Native fonts, text size, scale, themes, backgrounds and transparent-to-opaque panels; summary/tiny modes and saved positions.
 - **Mouseover On/Off** on the loot toolbar; reveal when hovered and fade when idle. Explicit show/hide controls and clear paused status.
+- Account-wide observed drop knowledge across characters on the same account; money, purchases and session accounting stay per character.
+- Optional community drop sharing defaults to **No**. **Yes** queues only new complete observations after consent; same-realm/faction/build/instance cohorts, deduplication and bounded queues. Save consent with normal /reload or logout for the companion to read it. No old observations are uploaded retroactively.
+- Community estimates show sample counts and uncertainty; they are observed player reports, not authoritative game drop chances. Market prices still use the original Blizzard collector.
+- GPH graph **Clock / Session elapsed** toggle, with actual recorded checkpoint times. Older missing wall-clock times are explicitly estimated.
+- Fixed stale mailbox/trade flags suppressing new loot. Background inbox updates no longer classify ordinary mob drops as mail. Historical unclassified aggregates cannot recreate missing item names.
 - Tracking resumes after reload if it was active; a deliberately paused session stays paused. Loading/offline time does not inflate active time.
 - Separate loot, unclassified receipts, purchases/spending, vendor sales and optional net auction-sale income. Estimated unsold loot and actual sale receipts are distinct accounting modes.
 - Bind on Pickup items use vendor value only in row modes, session totals, gold/hour, mob averages and value alerts; market estimates do not inflate them.
@@ -48,12 +53,15 @@ Auction browsing, Character Shop, price and quantity history, saved searches, Sn
 - Dedicated **Alerts** settings: custom minimum gold per item, optional native coin jingle, brief golden sparkles and preview. Default threshold is strictly above 1g per item.
 - Bounded reusable rows, two-chunk decode cache, corpse history and particle pool. Detailed event logs and compact session records grow with recorded history; full item ledgers retain the latest 50 sessions. No auction queries, forced reload or forced garbage collection from Farm.
 
-### Warcraft Market Forever 2.641.0 — `/wmf`
+### Warcraft Market Forever 2.646.0 — `/wmf`
 
 - WoW Forever EU Alliance, Horde and Blackwater market scopes using dated exports from the existing Blizzard API collector.
 - Browse Auctions with search/category/rarity/level filters, native item tooltips, watch controls, scrolling and up to 50 items per page.
 - Saved price, supply, auction and analysis graphs; saved searches, watch lists and local preferences.
 - Character Shop recommendations with class, role, level and equipment matching, visible metadata coverage and incremental loading.
+- Correct whole-stack commodity sale totals, matching native ITEM_PURCHASED confirmation and duplicate/context guards; unknown outcomes retain their retry lock.
+- Profession BUY / Buy next can request a fresh native quote and finish the single clicked batch without repeated checking clicks. A rise above 10% requires review, using the original displayed batch as the baseline; no automatic next purchase.
+- Stable three-day briefing work survives minute refreshes. Fresh unchanged API checks can confirm older price points without changing their original observation dates.
 - My auctions and posting workflows with confirmed native receipts, exact variant/stack checks, competition evidence and explicit click-to-trade safeguards.
 - Sniper and watch alerts; dated asking prices and estimated opportunities remain distinct from proven sales or guaranteed profits.
 - Profession Build with main-material-first scanning, optional patterns, cached journeys, shopping/crafting steps, cost summaries and eight profession-specific daytime scenes.
@@ -71,11 +79,13 @@ Auction browsing, Character Shop, price and quantity history, saved searches, Sn
 
 ### Installation and data
 
-- Windows installer 1.26.0 bundles matching WMF 2.641.0, Farm 1.4.0 and Performance 1.0.0.
+- Windows installer 1.27.0 bundles matching WMF 2.646.0, Farm 1.5.0 and Performance 1.0.0.
 - The complete manual addon bundle contains those three addons plus validated scoped-market helpers. A separate Farm-only ZIP is also provided.
 - Mana and Hunter Shot FX are excluded from these bundles. Existing standalone copies and WTF/SavedVariables are preserved.
 - The publisher-signed automatic channel updates the main WMF addon. Farm/Performance updates are delivered by the installer or manual ZIPs.
 - Windows MSI/EXE files remain Authenticode unsigned; addon publisher signatures are separate. Never disable security software to install.
+- The hourly legacy helper now uses the same validated, selected-market companion updater as Download prices now, preventing stale separate market files while combined prices advance.
+- Daily AI reports travel with validated scoped market downloads and populate both commentary views with their genuine dates. The morning job reuses reports without additional browsing-triggered AI requests; measured successful usage releases unused budget reservations while retaining the 30p cap and no automatic paid retries.
 - Prices update independently with their original observation dates. No collector database, API credentials or personal inventory/watch-list data is distributed.
 
 
