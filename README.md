@@ -3,19 +3,19 @@
 Auction browsing, price history and trading tools for WoW Forever EU: Alliance, Horde and Blackwater.
 
 <!-- WMF_CURRENT_RELEASE -->
-## Current downloads: addon 2.651.0, installer 1.32.0
+## Current downloads: addon 2.652.0, installer 1.33.0
 
 - [Always-current Windows installer EXE](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.exe)
-- [Windows installer 1.32.0 — bundled addon 2.651.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
-- [Manual addon bundle — WMF, Farm and Performance](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.651.0/WarcraftMarketForever-Addons-2.651.0.zip)
-- [Standalone Forever Farm ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.651.0/WarcraftMarketForever-Farm-1.5.1.zip)
-- [WMF core addon 2.651.0 ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.651.0/WarcraftMarketForever-2.651.0.zip)
+- [Windows installer 1.33.0 — bundled addon 2.652.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
+- [Manual addon bundle — WMF, Farm and Performance](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.652.0/WarcraftMarketForever-Addons-2.652.0.zip)
+- [Standalone Forever Farm ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.652.0/WarcraftMarketForever-Farm-1.7.1.zip)
+- [WMF core addon 2.652.0 ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.652.0/WarcraftMarketForever-2.652.0.zip)
 - [Current price pack](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever-Prices.zip)
 - [Versions and channel status](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/ReleaseInfo.json)
 
 Run WarcraftMarket-Setup.exe to fetch the latest MSI even from an older saved launcher. After the MSI upgrade, open Warcraft Market, choose the game folder and click Install/Reinstall addon, then `/reload` in WoW. The companion checks publisher-signed main, Farm and Performance updates plus current market data. The EXE launcher upgrades the Windows companion itself. Preserve WTF/SavedVariables and newer generated prices. WoW can stay open.
 
-Signed automatic addon updates deliver **2.651.0**.
+Signed automatic addon updates deliver **2.652.0**.
 
 The Windows MSI/EXE is Authenticode unsigned. If security software blocks it, use the manual ZIP; do not disable protection. Addon signatures are separate from Windows signing.
 <!-- /WMF_CURRENT_RELEASE -->
@@ -24,80 +24,7 @@ The Windows MSI/EXE is Authenticode unsigned. If security software blocks it, us
 
 Auction browsing, Character Shop, price and quantity history, saved searches, Sniper, crafting and conversion research, watchlists, posting and auction management. Media attribution and font licences remain in the distribution. GitHub Source code archives contain distribution documentation; install the actual ZIP/MSI above.
 
-## Included features
-
-### Forever Farm 1.5.1 â€” `/wmfg`
-
-- Live estimated gold/hour, session value, coins, quest gold, loot value, vendor alternative, goal progress and ETA.
-- Compact Warcraft-style summary plus independently draggable/resizable loot panel. Native item icons, rarity colours and game tooltips.
-- Two clear controls: **Loot: Every drop / Item totals** and **Value: Market / Vendor**. Matching ingredient quantities merge across looter-level link differences, retaining component valuations and named random variants.
-- **Summarise loot session** opens a separate scrolling snapshot, with frozen quantities/values and native icons immediately before item names. Live loot continues unchanged.
-- Full individual-drop history for new sessions, stored in compact chunks; only two chunks are decoded for scrolling. Older unavailable event details remain explicitly missing.
-- **Gold/hour graph** opens the familiar blue native graph at any time: cumulative session-average GPH sampled at five active-minute checkpoints, plus the current/final endpoint. Vendor/Market alternatives, hover details and X; pause/reload/offline time excluded.
-- **Ledger > Sessions** keeps one compact persistent row and graph per session, beyond the last 50 detailed item ledgers. Clicking a row opens its graph; later invoice corrections update the original final receipt total. Existing unrecorded checkpoints are not invented.
-- All graph samples remain saved; long graphs draw a bounded extrema-preserving projection with every original checkpoint accessible on hover.
-- Native fonts, text size, scale, themes, backgrounds and transparent-to-opaque panels; summary/tiny modes and saved positions.
-- **Mouseover On/Off** on the loot toolbar; reveal when hovered and fade when idle. Explicit show/hide controls and clear paused status.
-- Empty realm names use native normalized-name, CVar or numeric realm identity fallbacks. Unknown-realm samples remain local; no guessed realm or player GUID is uploaded. Missing identity pauses sharing while preserving consent and old records.
-- Account-wide observed drop knowledge across characters on the same account; money, purchases and session accounting stay per character.
-- Optional community drop sharing defaults to **No**. **Yes** queues only new complete observations after consent; same-realm/faction/build/instance cohorts, deduplication and bounded queues. Save consent with normal /reload or logout for the companion to read it. No old observations are uploaded retroactively.
-- Community estimates show sample counts and uncertainty; they are observed player reports, not authoritative game drop chances. Market prices still use the original Blizzard collector.
-- GPH graph **Clock / Session elapsed** toggle, with actual recorded checkpoint times. Older missing wall-clock times are explicitly estimated.
-- Fixed stale mailbox/trade flags suppressing new loot. Background inbox updates no longer classify ordinary mob drops as mail. Historical unclassified aggregates cannot recreate missing item names.
-- Tracking resumes after reload if it was active; a deliberately paused session stays paused. Loading/offline time does not inflate active time.
-- Separate loot, unclassified receipts, purchases/spending, vendor sales and optional net auction-sale income. Estimated unsold loot and actual sale receipts are distinct accounting modes.
-- Bind on Pickup items use vendor value only in row modes, session totals, gold/hour, mob averages and value alerts; market estimates do not inflate them.
-- Session, dungeon-visit and observed-level ledgers; saved totals and personal bests for value, gold/hour, loot/hour and best drop.
-- Enemy mouseover estimates include all readable observed corpse contents, including items not picked up. Native corpse sources establish attribution; no target guessing or invented drop tables.
-- Observed mob loot tables show native item icons, names, quantities, percentages and hit/sample counts. Stacks, variants and repeat openings do not inflate occurrence counts. Hold Shift for more rows.
-- Rates are empirical samples, not guaranteed game drop chances. Missing contents remain partial; unknown historical occurrence rates are not fabricated.
-- Click a loot item to open an independent WMF price-history graph with period controls and X. Click the same item again to close it; saved sessions use their own market.
-- Dedicated **Alerts** settings: custom minimum gold per item, optional native coin jingle, brief golden sparkles and preview. Default threshold is strictly above 1g per item.
-- Bounded reusable rows, two-chunk decode cache, corpse history and particle pool. Detailed event logs and compact session records grow with recorded history; full item ledgers retain the latest 50 sessions. No auction queries, forced reload or forced garbage collection from Farm.
-
-### Warcraft Market Forever 2.651.0 â€” `/wmf`
-
-- WoW Forever EU Alliance, Horde and Blackwater market scopes using dated exports from the existing Blizzard API collector.
-- Browse Auctions with search/category/rarity/level filters, native item tooltips, watch controls, scrolling and up to 50 items per page.
-- Saved price, supply, auction and analysis graphs; saved searches, watch lists and local preferences.
-- Character Shop recommendations with class, role, level and equipment matching, visible metadata coverage and incremental loading.
-- Correct whole-stack commodity sale totals, matching native ITEM_PURCHASED confirmation and duplicate/context guards; unknown outcomes retain their retry lock.
-- Profession BUY / Buy next can request a fresh native quote and finish the single clicked batch without repeated checking clicks. A rise above 10% requires review, using the original displayed batch as the baseline; no automatic next purchase.
-- Stable three-day briefing work survives minute refreshes. Fresh unchanged API checks can confirm older price points without changing their original observation dates.
-- My auctions and posting workflows with confirmed native receipts, exact variant/stack checks, competition evidence and explicit click-to-trade safeguards.
-- Sniper and watch alerts; dated asking prices and estimated opportunities remain distinct from proven sales or guaranteed profits.
-- Profession Build with main-material-first scanning, optional patterns, cached journeys, shopping/crafting steps, cost summaries and eight profession-specific daytime scenes.
-- Materials, profession gear, crafting and conversion research, Disenchant, prospecting/milling research, reputation and farming reference views.
-- Market intel and daily commentary views use existing generated feeds; browsing does not request paid AI. Feed source dates and incomplete coverage remain visible.
-- Responsive classic/concept layouts, graph visibility controls, standard blue fonts, reusable row/projection caches and background-work pacing.
-- New Horizons opening music and selectable sound/animation settings.
-
-### Forever Performance 1.0.0 â€” `/wmfp`
-
-- Configurable FPS target, fixed-size FPS history and gradual relief tiers for sustained low FPS.
-- Supported scenery settings adjust outside combat and restore gradually. Manual changes and other addons' changes are preserved.
-- Cooperative WMF background-work budgets and release of completed inactive projections while the market window is hidden.
-- On-demand native CPU and memory diagnostics with throttled refresh. It does not enable legacy profiling, unload arbitrary addons, force garbage collection or promise an FPS gain.
-
-### Installation and data
-
-- The always-current Windows EXE resolves and validates the latest MSI on each run. Default desktop shortcut, Start menu entry and saved companion choices are retained.
-- Enabled Windows updates check at :05 UTC and sign-in. Installer upgrades realign that client task while preserving an explicit opt-out; collector and publisher schedules are unchanged.
-- Both package preparation and compiled-installer preflight require scoped helpers and the combined compatibility snapshot to come from the same export. A price update during packaging is rejected rather than triggering the larger legacy load on fresh installs.
-- The bottom-left footer shows the selected market's source-check time loaded in WoW, with full UTC details on hover. A normal /reload loads newly downloaded files.
-- The 22 November intel refresh retains 30 dated briefs with original links, verified item IDs and explicit partial-source coverage. Reported player prices and margins remain unverified claims.
-- General/official briefs without item links remain visible and searchable. Full/abbreviated publication dates sort correctly; a report without a related item shows its facts and source without inventing an item graph.
-
-- Windows installer 1.32.0 bundles matching WMF 2.651.0, Farm 1.5.1 and Performance 1.0.0.
-- The complete manual addon bundle contains those three addons plus validated scoped-market helpers. A separate Farm-only ZIP is also provided.
-- Mana and Hunter Shot FX are excluded from these bundles. Existing standalone copies and WTF/SavedVariables are preserved.
-- The original publisher identity signs current WMF 2.651.0 full/code/media updates and the matching Farm/Performance channel. The release gate verifies their actual signatures and the matching installer bundle.
-- Windows MSI/EXE files remain Authenticode unsigned; addon publisher signatures are separate. Never disable security software to install.
-- The hourly legacy helper now uses the same validated, selected-market companion updater as Download prices now, preventing stale separate market files while combined prices advance.
-- Daily AI reports travel with validated scoped market downloads and populate both commentary views with their genuine dates. The morning job reuses reports without additional browsing-triggered AI requests; measured successful usage releases unused budget reservations while retaining the 30p cap and no automatic paid retries.
-- Prices update independently with their original observation dates. No collector database, API credentials or personal inventory/watch-list data is distributed.
-
-- Independently generated reputation and price-reference exports are preserved by installer upgrades and excluded from code component updates, alongside the other generated feeds. Fresh installs retain the bundled dated baseline.
+Forever Farm 1.7.1 adds actual-wallet coin jingles for vendor sales, trades, mail and all received gold, with a switch between all received cash earnings and the existing farming-estimate mode. Loot and vendor/auction receipts reconcile without duplicate income. It also adds tiny resizable corner graphs, a 20-percent minimum summary scale, sortable loot columns (quantity, item, unit value and total), and an optional current-wallet target row with ten labelled 10-percent segments. Graph scale and positions persist; right-click the graph corner to reset size. The independent current-gold window also includes five looks, hover-only controls, shooting-star coin swirls and a CC0 recording of real coins jingling. Wallet balance and saved farming/account knowledge are preserved. The recording is included in signed main media and the standalone Farm ZIP; the companion bundle retains its existing file contract for older managers. Installer 1.33.0 bundles Farm 1.7.1 and Performance 1.0.0. Main 2.652.0 restores item tooltips and price/history on Falling/Rising and shared hovers, and supplies Farm graph resizing. Hunter Ammo remains a separate local preview and is not bundled. Use /reload after updating. Native visual/audio acceptance remains user-reviewed. Windows EXE/MSI retain their existing unsigned status; addon/code/media/companion packages use the existing publisher signature. Market data retains genuine dates and updates independently.
 
 
 ## Installation and updates
