@@ -3,20 +3,20 @@
 Auction browsing, price history and trading tools for WoW Forever EU: Alliance, Horde and Blackwater.
 
 <!-- WMF_CURRENT_RELEASE -->
-## Current downloads: addon 2.654.0, installer 1.35.0
+## Current downloads: addon 2.661.0, installer 1.36.0
 
 - [Always-current Windows installer EXE](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.exe)
-- [Windows installer 1.35.0 — bundled addon 2.654.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
-- [Manual addon bundle — WMF, Farm, Hunter and Performance](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.654.0/WarcraftMarketForever-Addons-2.654.0.zip)
-- [Standalone Forever Farm ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.654.0/WarcraftMarketForever-Farm-1.8.2.zip)
-- [Standalone Hunter Ammo ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.654.0/WarcraftMarketForever-Hunter-1.4.0.zip)
-- [WMF core addon 2.654.0 ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.654.0/WarcraftMarketForever-2.654.0.zip)
+- [Windows installer 1.36.0 — bundled addon 2.661.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
+- [Manual addon bundle — WMF, Farm, Hunter and Performance](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.661.0/WarcraftMarketForever-Addons-2.661.0.zip)
+- [Standalone Forever Farm ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.661.0/WarcraftMarketForever-Farm-1.8.2.zip)
+- [Standalone Hunter Ammo ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.661.0/WarcraftMarketForever-Hunter-1.4.1.zip)
+- [WMF core addon 2.661.0 ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.661.0/WarcraftMarketForever-2.661.0.zip)
 - [Current price pack](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever-Prices.zip)
 - [Versions and channel status](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/ReleaseInfo.json)
 
 Run WarcraftMarket-Setup.exe to fetch the latest MSI even from an older saved launcher. After the MSI upgrade, open Warcraft Market, choose the game folder and click Install/Reinstall addon, then `/reload` in WoW. The companion checks publisher-signed main, Farm, Hunter and Performance updates plus current market data. The EXE launcher upgrades the Windows companion itself. Preserve WTF/SavedVariables and newer generated prices. WoW can stay open.
 
-Signed automatic addon updates deliver **2.654.0**.
+Signed automatic addon updates deliver **2.661.0**.
 
 The Windows MSI/EXE is Authenticode unsigned. If security software blocks it, use the manual ZIP; do not disable protection. Addon signatures are separate from Windows signing.
 <!-- /WMF_CURRENT_RELEASE -->
@@ -25,11 +25,15 @@ The Windows MSI/EXE is Authenticode unsigned. If security software blocks it, us
 
 Auction browsing, Character Shop, price and quantity history, saved searches, Sniper, crafting and conversion research, watchlists, posting and auction management. Media attribution and font licences remain in the distribution. GitHub Source code archives contain distribution documentation; install the actual ZIP/MSI above.
 
-Forever Farm 1.8.2: original compact wallet views, continuous gold/blue/silver glowing target styles, explicit hours ETA, independent resizing, Shift-click options, and all received gold with the optional income-mode toggle. Graph resizing/sorting and genuine market source dates are retained.
+## Fishing & Cooking
 
-Hunter Ammo 1.4.0: one compact Auto Shot countdown bar and Aimed ready mark/cooldown/cast timer, without help rows. Frost/Gold themes pair the bar with original matching ice/gold arrow art and trails; Up direction and Shift-click options remain. Unknown native spell data shows -- and never fabricates readiness. No automatic casts.
+A full-width food table with a responsive panoramic banner, recipe ingredients, farming locations and coordinates, Auction House prices and estimated gold per hour. Food effects appear in tooltip green, including both the Intellect and kill XP bonuses on Roast Raptor. Hover a food for game details. **Buy recipe** opens the existing Buy Box for eligible recipes. **Back** returns to the previous view.
 
-Installer 1.35.0 bundles Farm, Hunter and Performance. Main, Farm/Performance and the separate Hunter update channel all use the existing publisher verification identity. The old Farm/Performance companion ZIP layout remains unchanged, so older managers can still update Farm. Run the always-current EXE once to upgrade an old Windows manager to Hunter-capable 1.35.0. The complete manual ZIP and separate Farm/Hunter ZIPs are also available. Windows EXE/MSI remain Authenticode unsigned; addon-channel signatures are separate. No collector/database/schedule changes; WoW can stay open. Native rendering/timing acceptance awaits /reload.
+The release also corrects the posting error when choosing to use a recommendation override. Hunter Ammo 1.4.1 keeps the Auto Shot countdown and Aimed Shot marker, with the projectile and target effects removed. The full manual bundle and installer include Forever Farm 1.8.2, Hunter Ammo 1.4.1 and Forever Performance 1.0.0.
+
+## Choose which addons to install
+
+In the Windows companion, tick any of **Forever Farm**, **Hunter Ammo** and **Performance** before choosing **Install addon** or **Update addon now**. Hunter starts unchecked on new installs. Existing Hunter installations remain selected on upgrade if companion updates were enabled. Clearing a checkbox stops managing that addon and keeps its installed files and saved settings. Manual ZIP users can extract only the addon folders they want.
 
 
 ## Installation and updates
