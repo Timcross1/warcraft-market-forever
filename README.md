@@ -3,23 +3,23 @@
 Auction browsing, price history and trading tools for WoW Forever EU: Alliance, Horde and Blackwater.
 
 <!-- WMF_CURRENT_RELEASE -->
-## Current downloads: addon 2.665.0, installer 1.40.0
+## Current downloads: addon 2.666.0, installer 1.41.0
 
 - [Always-current Windows installer EXE](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.exe)
-- [Windows installer 1.40.0 — bundled addon 2.665.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
-- [Post and Transit manual ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.665.0/WarcraftMarket-Tools.zip)
-- [Complete manual addon bundle with optional helpers](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.665.0/WarcraftMarketForever-Addons-2.665.0.zip)
-- [Standalone Forever Farm ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.665.0/WarcraftMarketForever-Farm-1.8.12.zip)
-- [Standalone Hunter Ammo ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.665.0/WarcraftMarketForever-Hunter-1.4.1.zip)
-- [Standalone Warcraft Market Post ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.665.0/WarcraftMarketForever-Post-1.3.3.zip)
-- [Standalone Warcraft Market Transit ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.665.0/WarcraftMarketForever-Transit-1.1.1.zip)
-- [Standalone Forever Quest ZIP (manual optional addon)](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.665.0/WarcraftMarketForever-Quest-1.1.0.zip)
-- [Standalone Forever Bank ZIP (manual optional addon)](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.665.0/WarcraftMarketForever-Bank-1.0.0.zip)
-- [WMF core addon 2.665.0 ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.665.0/WarcraftMarketForever-2.665.0.zip)
+- [Windows installer 1.41.0 — bundled addon 2.666.0](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarket-Setup.msi)
+- [Post and Transit manual ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.666.0/WarcraftMarket-Tools.zip)
+- [Complete manual addon bundle with optional helpers](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.666.0/WarcraftMarketForever-Addons-2.666.0.zip)
+- [Standalone Forever Farm ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.666.0/WarcraftMarketForever-Farm-1.9.0.zip)
+- [Standalone Hunter Ammo ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.666.0/WarcraftMarketForever-Hunter-1.4.1.zip)
+- [Standalone Warcraft Market Post ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.666.0/WarcraftMarketForever-Post-1.4.0.zip)
+- [Standalone Warcraft Market Transit ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.666.0/WarcraftMarketForever-Transit-1.1.1.zip)
+- [Standalone Forever Quest ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.666.0/WarcraftMarketForever-Quest-1.3.0.zip)
+- [Standalone Forever Bank ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.666.0/WarcraftMarketForever-Bank-1.1.0.zip)
+- [WMF core addon 2.666.0 ZIP](https://github.com/Timcross1/warcraft-market-forever/releases/download/v2.666.0/WarcraftMarketForever-2.666.0.zip)
 - [Current price pack](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/WarcraftMarketForever-Prices.zip)
 - [Versions and channel status](https://github.com/Timcross1/warcraft-market-forever/releases/latest/download/ReleaseInfo.json)
 
-Run WarcraftMarket-Setup.exe once to upgrade to Windows companion **1.40.0**, which bundles addon **2.665.0** and its matching managed helpers. The EXE fetches the latest MSI even from an older saved launcher. After the MSI upgrade, open Warcraft Market, choose the game folder, select optional helpers and click Install/Reinstall addon, then `/reload` in WoW. The companion checks signed main-addon updates and selected Farm, Hunter, Performance, Post and Transit updates, plus current market data. Quest and Bank are separate optional manual addons in the complete ZIP. Preserve WTF/SavedVariables and newer generated prices. WoW can stay open.
+Run WarcraftMarket-Setup.exe once to upgrade to Windows companion **1.41.0**, which bundles addon **2.666.0** and its matching managed helpers. The EXE fetches the latest MSI even from an older saved launcher. After the MSI upgrade, open Warcraft Market, choose the game folder, select optional helpers and click Install/Reinstall addon, then `/reload` in WoW. The companion checks signed main-addon updates and selected Farm, Hunter, Performance, Post, Transit, Quest and Bank updates, plus current market data. Quest and Bank require Windows companion 1.41.0 or newer and remain optional choices; standalone ZIPs are also available. Preserve WTF/SavedVariables and newer generated prices. WoW can stay open.
 
 ### Optional downloads from their publishers
 
@@ -29,7 +29,7 @@ Run WarcraftMarket-Setup.exe once to upgrade to Windows companion **1.40.0**, wh
 
 Choose the publisher’s WoW Forever files. These tools can be installed separately.
 
-With Windows companion **1.40.0 or newer**, signed automatic addon updates deliver **2.665.0**.
+With Windows companion **1.41.0 or newer**, signed automatic addon updates deliver **2.666.0**.
 
 The Windows MSI/EXE is Authenticode unsigned. If security software blocks it, use the manual ZIP; do not disable protection. Addon signatures are separate from Windows signing.
 <!-- /WMF_CURRENT_RELEASE -->
@@ -38,13 +38,14 @@ The Windows MSI/EXE is Authenticode unsigned. If security software blocks it, us
 
 Auction browsing, Character Shop, price and quantity history, saved searches, Sniper, crafting and conversion research, watchlists, posting and auction management. Media attribution and font licences remain in the distribution. GitHub Source code archives contain distribution documentation; install the actual ZIP/MSI above.
 
-## Changes in 2.665.0 / Windows 1.40.0
+## Changes in 2.666.0 / Windows 1.41.0
 
-- **Forever Farm 1.8.12:** Current Gold has independent width/height, compact coin art, one-row Target/ETA, saved 8-24 wallet text size and separate 4-32 px bar thickness. Its title matches the Forever Farm title's font and visible size, including independent Summary scaling. Look cycles all five appearances with one click. Settings open one panel at a time with Back/X; positions, custom sizes and values are retained. Summary and Loot snap with a slim gap, including different scales. Existing optional auction-house window remains independently movable/resizable and controlled under Windows.
-- **Post 1.3.3:** permanent account address book, manually added full names, optional notes, known alts and confirmed send journal. `/wmpost addressbook` saves contacts away from a mailbox. The native Forever blank-realm identity case is handled using the exact native realm/shard identifier. Reply-driven Open all advances on server replies, with bounded waits, safeguards and accurate payment accounting. Payment glow and wallet coin animation/jingle remain optional. Hovering the Post launcher shows the addon version.
-- **WMF 2.665.0:** ledger graph date controls use explicit date windows, and Profession Build includes learning/recipe-source references, including skill-cap progression. Existing exact-market, source-date and purchase-confirmation safeguards remain.
-- **Forever Quest 1.1.0 and Bank 1.0.0:** available as optional manual addon folders and standalone ZIPs. These two extras are not yet managed by the Windows companion; copy only the folders you want from the complete ZIP. New addon discovery may need a normal game restart. Existing addons load changes with `/reload`.
-- **Windows 1.40.0:** matching core 2.665.0 and updated Farm/Post bundles. Managed Farm, Performance, Hunter Ammo, Post and Transit remain selectable. Existing data, preferences and newer generated feeds are preserved. Mana and Hunter Shot FX remain excluded.
+- **Forever Quest 1.3.0:** Ready to hand in shows each native XP reward and Total ready XP, including rows outside the viewport. Expected rewards stay separate from earned XP and completion counts. Rewards refresh on quest, metadata and level events; unknown rewards remain explicit.
+- **Forever Bank 1.1.0:** fixes double stack-count rendering, adds direct Category sorting and All characters / Separate / Combined saved-bank views with dated ownership and variant-safe quantities. Shared account banks count once. Remote/saved views never move native items.
+- **Post 1.4.0:** fixes the oversized To click area and focus-triggered address-book popup loop. The window moves independently, resizes from all four corners, and has saved lock/reset controls under Windows.
+- **Forever Farm 1.9.0:** named user profiles restore settings and all main window positions/sizes, preserving session data and consent. Current Gold uses title case; only its main amounts are two points smaller.
+- **Windows 1.41.0:** optional Quest and Bank installation and signed automatic updates through a separate Extras channel. Existing Farm/Performance, Post/Transit and Hunter channels remain compatible. All helpers can still be installed from standalone ZIPs. Existing selections and saved data are preserved; new Quest/Bank choices default Off.
+- **Core 2.666.0:** matching release version and installer bundle; the established auction, ledger, price-data and transaction safeguards remain in place.
 
 ## Warcraft Market
 
@@ -59,6 +60,7 @@ Auction browsing, Character Shop, price and quantity history, saved searches, Sn
 
 ## Forever Farm
 
+- Named user profiles save Farm settings, window positions, sizes, visibility and docking offsets; session data, balances, market and sharing consent remain separate. Current Gold heading uses title case and its main amounts are two points smaller with unchanged coin art and independent bar/text controls.
 - Compact session dashboard plus an independently draggable and resizable loot/ledger panel. Native game icons, item rarity and tooltips; fonts, themes, background opacity, sizing, saved positions and mouseover visibility controls.
 - Live coins and loot estimates, dynamic gold/hour, best drop, target amount and ETA. Vendor/Market and Every drop/Item totals controls; optional timestamps. Summary opens a separate snapshot while new loot continues to record.
 - Loot, purchases/spending, vendor receipts and optional confirmed net auction sales are separate. Bind-on-pickup items use vendor value only.
@@ -69,21 +71,25 @@ Auction browsing, Character Shop, price and quantity history, saved searches, Sn
 - Loot notifications have separate coin-sound and short golden-sparkle controls with an editable value threshold, strictly above 1g by default.
 - Independent Current Gold wallet with five compact looks, six target-bar styles, target percentage, optional glow/coin effects and explicit hours ETA. Pause state survives reload and is visibly marked.
 
-## Warcraft Market Post 1.3.3
+## Warcraft Market Post 1.4.0
 
+- Bounded To/Address book controls fix the popup/focus loop while attaching items. Drag the title, resize from any corner, and lock/reset under Options > Windows.
 - Own Inbox, Send composer, Recipients and Sent Journal, with native icons/tooltips and game delivery confirmation. Native/Mello visual panels stay suppressed while the mailbox controller remains active.
 - Open all / Gold only, progress, Stop, multiple attachments, overflow batches, refreshed indices, bounded reply recovery and per-envelope failure isolation. COD/GM exclusions and bag-full handling retain undeliverable items safely in mail.
 - Bag item search, one-stack or matching-stack attachment selection, removal, postage, money/COD and explicit per-send review. Pending guards prevent duplicate submission; journal records distinguish confirmed sends from attempts.
 - Account address book, captured alts/previous recipients, manual Add name and notes. Contact editing works away from mailboxes and never sends mail. Saved variables and receipts survive addon updates.
 - Optional glowing payment rows; verified incoming gold updates Current Gold with optional coin jingles/animation using actual wallet changes.
 
-## Forever Quest 1.1.0 (optional manual addon)
+## Forever Quest 1.3.0
 
+- Ready to hand in: gold ticks, native XP reward per quest and Total ready XP across every ready quest. Late/unknown values remain explicit; only actual turn-ins enter earned XP and completion totals.
 - Completed turn-ins with green native completion ticks, quest icons/tooltips, completion times and recorded quest XP. Imports available historical completed quest IDs; missing old XP is not invented.
 - Session and recorded totals, total observed XP, quest XP, XP/hour and native level progress. Optional periodic XP/hour flashes; movable/resizable window, appearance/visibility controls, pause and retained character data.
 
-## Forever Bank 1.0.0 (optional manual addon)
+## Forever Bank 1.1.0
 
+- All-character captured banks in Separate/Combined views, exact item variants, dated owner quantities and shared-bank deduplication. Snapshots import when each alt logs in; missing banks need a banker visit and are never inferred empty. All-character views are read-only.
+- Explicit Category sort menu and one native/fallback stack-count renderer.
 - Independent replacement bank window with native item controls, icons/tooltips, search, filters, grid/list layouts and appearance options.
 - Saved, dated read-only character bank snapshots and ownership; absence of a snapshot is unknown. Live bank actions require the bank to be open and retain native safeguards.
 
@@ -92,7 +98,7 @@ Auction browsing, Character Shop, price and quantity history, saved searches, Sn
 - Hunter Ammo 1.4.1: ammunition count, compact Auto Shot countdown, Aimed Shot readiness/cast feedback, Frost/Gold colours and movable controls. No projectile or target effects.
 - Performance 1.0.0: bounded FPS samples, gradual supported scenery adjustment outside combat, restoration of settings it still owns and cooperative WMF background-work reduction. Native CPU/memory evidence is shown when available; no promised FPS gain, forced collection or forced reload.
 - Transit 1.1.1: retained route/transport assistance and matching optional signed tool delivery.
-- The Windows companion manages Farm, Performance, Hunter Ammo, Post and Transit. Quest and Bank are manual optional extras. Removing a managed choice preserves its installed files/settings.
+- The Windows companion manages Farm, Performance, Hunter Ammo, Post, Transit, Quest and Bank. Quest and Bank are optional installer choices from Windows companion 1.41.0, with a separate signed Extras channel; older managers keep their existing channels unchanged. Removing a managed choice preserves its installed files/settings.
 - The existing signing identity protects main/code/media, Farm/Performance, Hunter and Post/Transit channels. Prices refresh independently from validated Blizzard collector exports with their real dates. Friends receive exports, never the collector database or credentials.
 - Windows EXE/MSI files remain Authenticode unsigned. Saved variables and newer generated observations are preserved. Synthetic tests do not establish native visual appearance, server latency or live FPS.
 
